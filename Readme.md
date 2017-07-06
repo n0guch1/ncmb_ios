@@ -1,6 +1,6 @@
 # ニフティクラウド mobile backend iOS SDKについて
 
-[![Build Status](https://travis-ci.org/NIFTYCloud-mbaas/ncmb_ios.svg?branch=add/travis)](https://travis-ci.org/NIFTYCloud-mbaas/ncmb_ios)
+[![Build Status](https://travis-ci.org/NIFTYCloud-mbaas/ncmb_ios.svg?branch=master)](https://travis-ci.org/NIFTYCloud-mbaas/ncmb_ios)
 
 ## 概要
 
