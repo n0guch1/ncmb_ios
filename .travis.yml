@@ -9,5 +9,6 @@ before_install:
   - pod install
 before_script:
   - set -o pipefail
+  - xcrun simctl list
 script:
-  - xcodebuild -workspace NCMBTests.xcworkspace -scheme NCMBTests -destination 'platform=iOS Simulator,OS=8.4,name=iPhone 6' -destination 'platform=iOS Simulator,OS=10.3.1,name=iPhone 7' -verbose -sdk iphonesimulator test | xcpretty -c
+  - xcodebuild -workspace NCMBTests.xcworkspace -scheme NCMBTests -destination 'platform=iOS Simulator,OS=8.4,name=iPhone 6' -destination 'platform=iOS Simulator,OS=10.3.1,name=iPhone 7' -sdk iphonesimulator test | xcpretty -c
