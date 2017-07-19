@@ -11,4 +11,4 @@ before_script:
   - set -o pipefail
   - xcrun simctl list
 script:
-  - xcodebuild -workspace NCMBTests.xcworkspace -scheme NCMBTests -destination 'platform=iOS Simulator,OS=10.2,name=iPhone 7' -sdk iphonesimulator test | xcpretty -c
+  - xcodebuild -workspace NCMBTests.xcworkspace -scheme NCMBTests -destination 'platform=iOS Simulator,OS=10.1,name=iPhone 7' -sdk iphonesimulator test | xcpretty -c
