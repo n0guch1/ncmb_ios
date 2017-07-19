@@ -3,6 +3,7 @@ osx_image: xcode8.3
 env:
   matrix:
     - TEST_OS="platform=iOS Simulator,name=iPhone 6,OS=9.0"
+    - TEST_OS="platform=iOS Simulator,name=iPhone 6,OS=10.1"
 xcode_workspace: NCMBTests/NCMBTests.xcworkspace
 xcode_scheme: NCMBTests
 xcode_sdk: iphonesimulator
