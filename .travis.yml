@@ -1,5 +1,5 @@
 language: objective-c
-osx_image: xcode8.3
+osx_image: xcode8.2
 xcode_workspace: NCMBTests/NCMBTests.xcworkspace
 xcode_scheme: NCMBTests
 xcode_sdk: iphonesimulator
@@ -11,4 +11,4 @@ before_script:
   - set -o pipefail
   - xcrun simctl list
 script:
-  - xcodebuild -workspace NCMBTests.xcworkspace -scheme NCMBTests -destination 'platform=iOS Simulator,OS=8.4,name=iPhone 6' -destination 'platform=iOS Simulator,OS=10.3.1,name=iPhone 7' -sdk iphonesimulator test | xcpretty -c
+  - xcodebuild -workspace NCMBTests.xcworkspace -scheme NCMBTests -destination 'platform=iOS Simulator,OS=8.4,name=iPhone 6' -destination 'platform=iOS Simulator,OS=10.2,name=iPhone 7' -sdk iphonesimulator test | xcpretty -c
