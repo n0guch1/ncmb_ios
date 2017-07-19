@@ -14,4 +14,4 @@ before_install:
 before_script:
   - set -o pipefail
 script:
-  - xcodebuild -workspace NCMBTests.xcworkspace -scheme NCMBTests -destination "${TEST_OS}" -sdk iphonesimulator test | xcpretty -c
+    - xcodebuild -workspace NCMBTests.xcworkspace -scheme NCMBTests clean test -destination "${TEST_OS}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -sdk iphonesimulator | xcpretty -c
