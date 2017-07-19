@@ -10,4 +10,4 @@ before_install:
 before_script:
   - set -o pipefail
 script:
-  - xcodebuild -workspace NCMBTests.xcworkspace -scheme NCMBTests -destination 'platform=iOS Simulator,OS=9.0,name=iPhone 7' -sdk iphonesimulator test | xcpretty -c
+  - xcodebuild -workspace NCMBTests.xcworkspace -scheme NCMBTests -destination 'platform=iOS Simulator,name=iPhone 6,OS=9.0' -sdk iphonesimulator test | xcpretty -c
